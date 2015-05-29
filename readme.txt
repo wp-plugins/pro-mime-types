@@ -11,7 +11,7 @@ Pro Mime Types allows you to set allowed upload mime types through a nifty netwo
 
 == Description ==
 
-##Pro Mime Types
+**Pro Mime Types**
 
 *For Pro Sites functionality you'll need the Pro Sites plugin from WPMUdev, get it here: [Pro Sites by WPMUdev]*
 
