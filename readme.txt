@@ -45,10 +45,6 @@ You can also see the list of all active Mime Types on the network.
 1. Save the settings at the bottom of the page
 1. That's it! Enjoy :)
 
-== Frequently Asked Questions ==
-
-== Screenshots ==
-
 == Changelog ==
 
 = 1.0.2 =
@@ -60,7 +56,3 @@ You can also see the list of all active Mime Types on the network.
 
 = 1.0.0 =
 * Initial Release
-
-== Upgrade Notice ==
-
-== Arbitrary section ==
