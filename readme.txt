@@ -15,7 +15,7 @@ Pro Mime Types allows you to set allowed upload mime types through a nifty netwo
 
 ***This plugin will only work on WordPress MultiSite***
 
-*For Pro Sites the extra functionality you'll need the Pro Sites plugin from WPMUdev, get it here: [Pro Sites by WPMUdev]*
+*For the extra Pro Sites functionality you'll need the Pro Sites plugin from WPMUdev, get it here: [Pro Sites by WPMUdev]*
 
 [Pro Sites by WPMUdev]: https://premium.wpmudev.org/project/pro-sites/
 	"Get Pro Sites"
