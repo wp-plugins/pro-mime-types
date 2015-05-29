@@ -11,14 +11,16 @@ Pro Mime Types allows you to set allowed upload mime types through a nifty netwo
 
 == Description ==
 
-**Pro Mime Types**
+= Pro Mime Types =
 
-*For Pro Sites functionality you'll need the Pro Sites plugin from WPMUdev, get it here: [Pro Sites by WPMUdev]*
+***This plugin will only work on WordPress MultiSite***
+
+*For Pro Sites the extra functionality you'll need the Pro Sites plugin from WPMUdev, get it here: [Pro Sites by WPMUdev]*
 
 [Pro Sites by WPMUdev]: https://premium.wpmudev.org/project/pro-sites/
 	"Get Pro Sites"
 
-**Multisite only**
+**About this plugin:**
 
 This plugin allows you to set allowed mime types to be uploaded throughout your network installation. By default WordPress doesn't allow many mime types to be uploaded.
 
@@ -62,5 +64,3 @@ You can also see the list of all active Mime Types on the network.
 == Upgrade Notice ==
 
 == Arbitrary section ==
-
-If you wish to edit this plugin, all you need to do is uncomment stuff in function wap_w3tc_init(), every line is documented there.
