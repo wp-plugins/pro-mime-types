@@ -1,5 +1,5 @@
 === Pro Mime Types ===
-Contributors: cybr
+Contributors: Cybr
 Tags: mime, mimetypes, types, multisite
 Requires at least: 3.1.0
 Tested up to: 4.2.2
