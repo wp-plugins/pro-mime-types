@@ -3,7 +3,7 @@ Contributors: Cybr
 Tags: mime, mimetypes, types, multisite
 Requires at least: 3.1.0
 Tested up to: 4.2.2
-Stable tag: 4.2.2
+Stable tag: 1.0.3
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -46,6 +46,9 @@ You can also see the list of all active Mime Types on the network.
 1. That's it! Enjoy :)
 
 == Changelog ==
+
+= 1.0.3 =
+* Made the shortcodes conforming to the WordPress coding standards
 
 = 1.0.2 =
 * Now uses Object Cache to determine Pro Site level, updates every 4 hours

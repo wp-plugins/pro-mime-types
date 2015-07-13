@@ -12,11 +12,14 @@ function hmpl_showmimetypes_shortcode($params, $content = null){
 			$types[] = '<li>' . str_replace('|', ', ', $mime ) . '</li>';
 		}
 		
-		echo 	'<p><h3>';
-		echo	__('Currently allowed mime types:', 'promimetypes');
-		echo	'</h3>' .
-				'<ul style="font-size:120%;font-weight:600;">' . implode('', $types) . '</ul>' .
-				'</p>';
+		$output = '<p><h3>'
+				. __('Currently allowed mime types:', 'promimetypes')
+				. '</h3>'
+				. '<ul style="font-size:120%;font-weight:600;">' . implode('', $types) . '</ul>'
+				. '</p>'
+				;
+		
+		return $output;
 	} else {
 		return;
 	}
