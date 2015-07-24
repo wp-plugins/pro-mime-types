@@ -3,7 +3,7 @@
 //* Super Admin (MS) / Admin (Single) only
 //* Usage: [superadmin_showmimetypes]
 
-function hmpl_showmimetypes_shortcode($params, $content = null){
+function hmpl_showmimetypes_shortcode($params = array(), $content = null){
 	if ( pmt_site_admin() ){
 		$mimes = get_allowed_mime_types();
 		$types = array();

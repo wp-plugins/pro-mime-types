@@ -47,6 +47,9 @@ You can also see the list of all active Mime Types on the network.
 
 == Changelog ==
 
+= 1.0.4 =
+* Fixed PHP warning
+
 = 1.0.3 =
 * Made the shortcodes conforming to the WordPress coding standards
 
