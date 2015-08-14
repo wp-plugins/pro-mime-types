@@ -42,8 +42,8 @@ function pmt_promimes($promimes) {
 		array('tsv','text/tab-separated-values',0,''),
 		array('ics','text/calendar',0,''),
 		array('rtx','text/richtext',0,''),
-		array('css','text/css',3,__('@import rules in CSS can be executed in browser.', 'promimetypes')),
-		array('htm|html','text/html',3,__('Can run in iframes through shortcodes. Can import javascript.', 'promimetypes')),
+		array('css','text/css',3,__('@import and behaviour: rules in CSS can be executed in browser.', 'promimetypes')),
+		array('htm|html','text/html',3,__('Can run in iframes through shortcodes. Can import javascript. Can import CSS.', 'promimetypes')),
 		array('vtt','text/vtt',0,''),
 		array('dfxp','application/ttaf+xml',3,__('Can potentionally import.', 'promimetypes')),
 		

@@ -2,8 +2,8 @@
 Contributors: Cybr
 Tags: mime, mimetypes, types, multisite
 Requires at least: 3.1.0
-Tested up to: 4.2.3
-Stable tag: 1.0.4
+Tested up to: 4.3.0
+Stable tag: 1.0.5
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -13,7 +13,7 @@ Pro Mime Types allows you to set allowed upload mime types through a nifty netwo
 
 = Pro Mime Types =
 
-***This plugin will only work on WordPress MultiSite***
+***This plugin works on both WordPress MultiSite and Single Sites***
 
 *For the extra Pro Sites functionality you'll need the Pro Sites plugin from WPMUdev, get it here: [Pro Sites by WPMUdev]*
 
@@ -47,6 +47,17 @@ You can also see the list of all active Mime Types on the network.
 
 == Changelog ==
 
+= 1.0.5 =
+* Compatibility: PHP7 & WP 4.3.0 confirmed
+* Added: Default mime options (enabled for safe, disabled for the rest) (effective only before first safe has been made)
+* Added: Default Mime Types are directly active on first activation
+* Added: single-site compatibility
+* Added: Extra option saving sanitation
+* Removed: Pro Sites information on non-multisite installations
+* Fixed: Unlikely XSS vulnerability in admin area
+* Cleaned: HTML
+* Cleaned: PHP code
+
 = 1.0.4 =
 * Fixed PHP warning
 
@@ -56,7 +67,7 @@ You can also see the list of all active Mime Types on the network.
 = 1.0.2 =
 * Now uses Object Cache to determine Pro Site level, updates every 4 hours
 
-= 1.0.1 = 
+= 1.0.1 =
 * Fixed PHP notice
 * Loaded global variable $promimes within 'init' instead of 'wp'
 

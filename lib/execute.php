@@ -2,20 +2,26 @@
 //* Executing the code to something that works
 
 function pmt_upload_mimes( $existing_mimes = array() ) {
-	global $wpdb,$blog_id,$promimes;
+	global $wpdb, $blog_id, $promimes;
+	
+	$prolevelsql = '';
 
 	//* run code
 	foreach($promimes as $mime) {
-		$type = $mime[0];
-		$label = $mime[1];
+		$type = esc_attr( $mime[0] );
+		$label = esc_attr( $mime[1] );
+		$danger = esc_attr( $mime[2] );
 		
-		${'pmt_mime_type_'.$type} = get_site_option( 'pmt_mime_type_' . $type );
-		${'pmt_mime_type_'.$type.'_pro'} = get_site_option( 'pmt_mime_type_' . $type . '_pro' );
+		if  ($danger == 0 ) {
+			$default = '1';
+		} else {
+			$default = '2';
+		}
 		
-		if (is_prosites_active()) {	
-			//	$prolevelsql = -1; //resets the query
+		${'pmt_mime_type_'.$type} = get_site_option( 'pmt_mime_type_' . $type, $default );
+		${'pmt_mime_type_'.$type.'_pro'} = get_site_option( 'pmt_mime_type_' . $type . '_pro', 0 );
 		
-			//* Uses object cache now, when available (needs plugin like batcache, w3 total cache, etc.)
+		if ( is_prosites_active() ) {
 			$prolevelsql = wp_cache_get('hmpl_pro_level_sql_' . $blog_id, 'hmpl_mainblog' );
 			
 			if ( false === $prolevelsql ) {
@@ -27,7 +33,7 @@ function pmt_upload_mimes( $existing_mimes = array() ) {
 		
 		//* Global active if pro sites isn't activated/installed.
 		if (!is_prosites_active()) {
-			if (${'pmt_mime_type_'.$type} == 1 ) {
+			if ( ${'pmt_mime_type_'.$type} == 1 ) {
 				$existing_mimes[$type] = $label;
 			} else if (${'pmt_mime_type_'.$type} == 2 ) {
 				unset( $existing_mimes[$type] );
@@ -35,9 +41,9 @@ function pmt_upload_mimes( $existing_mimes = array() ) {
 				unset( $existing_mimes[$type] );
 			}
 		} else {
-			if ((${'pmt_mime_type_'.$type} == 1) && ${'pmt_mime_type_'.$type.'_pro'} <= $prolevelsql ) {
+			if ( ( ${'pmt_mime_type_'.$type} == 1 ) && ${'pmt_mime_type_'.$type.'_pro'} <= $prolevelsql ) {
 				$existing_mimes[$type] = $label;
-			} else if ((${'pmt_mime_type_'.$type} == 1) && ${'pmt_mime_type_'.$type.'_pro'} >= $prolevelsql) {
+			} else if ( ( ${'pmt_mime_type_'.$type} == 1 ) && ${'pmt_mime_type_'.$type.'_pro'} >= $prolevelsql ) {
 				unset( $existing_mimes[$type] );
 			} else if (${'pmt_mime_type_'.$type} == 2 ) {
 				unset( $existing_mimes[$type] );
