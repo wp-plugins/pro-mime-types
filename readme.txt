@@ -1,6 +1,6 @@
 === Pro Mime Types ===
 Contributors: Cybr
-Tags: mime, mimetypes, types, multisite
+Tags: mime, mimetypes, types, multisite, single, upload, wpmu, prosites, pro, sites
 Requires at least: 3.1.0
 Tested up to: 4.3.0
 Stable tag: 1.0.5
@@ -13,42 +13,41 @@ Pro Mime Types allows you to set allowed upload mime types through a nifty netwo
 
 = Pro Mime Types =
 
-***This plugin works on both WordPress MultiSite and Single Sites***
+**This plugin works on both WordPress MultiSite and Single Sites**
 
-*For the extra Pro Sites functionality you'll need the Pro Sites plugin from WPMUdev, get it here: [Pro Sites by WPMUdev]*
+This plugin allows you to:
 
-[Pro Sites by WPMUdev]: https://premium.wpmudev.org/project/pro-sites/
-	"Get Pro Sites"
-
-**About this plugin:**
-
-This plugin allows you to set allowed mime types to be uploaded throughout your network installation. By default WordPress doesn't allow many mime types to be uploaded.
+* Set allowed Mime types
+* If allowed, also set minimum Pro Sites level (WPMUdev plugin)
 
 Within the network admin menu under Settings you can allow or disallow various mime types.
 You can also see the list of all active Mime Types on the network.
 
-**When a Mime Type is allowed:**
+> <strong>About Pro Mime Types</strong><br>
+> This plugin allows you to set available mime types for upload in the Media Library
+>
+> When a Mime Type is allowed:
+> Any user can upload the file
+>
+> When a Mime Type is disallowed:
+> The user gets an error that the file isn't allowed because of security reasons.
 
-* Any user can upload the allowed Mime Type through the WordPress Media Uploader.
-* If set, only the allowed Pro Level and higher can upload the Mime Type through the WordPress Media Uploader.
+*For the extra Pro Sites functionality you'll need the Pro Sites plugin from WPMUdev, get it here: [Pro Sites by WPMUdev]*
 
-**When a Mime Type is disallowed:**
-
-* No one can upload the Mime Type, not even the Pro Level next to it.
+[Pro Sites by WPMUdev]: https://premium.wpmudev.org/project/pro-sites/
+	"Pro Sites"
 
 == Installation ==
 
 1. Install Pro Mime Types either via the WordPress.org plugin directory, or by uploading the files to your server.
-1. Network Activate this plugin through the Network Plugin Manager.
-1. Set the allowed mime types in /wp-admin/network/settings.php?page=pmt_admin_page
-1. Hover over any blue, orange or red colored mime type to see the reason why it's potentially unwanted
-1. Save the settings at the bottom of the page
-1. That's it! Enjoy :)
+1. Either Network Activate this plugin or activate it on a single site.
+1. If you're on a MultiSite network, you can set up the default options for the whole network in your Network Settings menu.
+1. If you're on a Single Site installation, you can set up the default options within the Settings menu.
+1. That's it! Enjoy!
 
 == Changelog ==
 
 = 1.0.5 =
-* Compatibility: PHP7 & WP 4.3.0 confirmed
 * Added: Default mime options (enabled for safe, disabled for the rest) (effective only before first safe has been made)
 * Added: Default Mime Types are directly active on first activation
 * Added: single-site compatibility
@@ -57,6 +56,7 @@ You can also see the list of all active Mime Types on the network.
 * Fixed: Unlikely XSS vulnerability in admin area
 * Cleaned: HTML
 * Cleaned: PHP code
+* Compatibility: PHP7 & WP 4.3.0 tested
 
 = 1.0.4 =
 * Fixed PHP warning
