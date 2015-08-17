@@ -48,7 +48,7 @@ You can also see the list of all active Mime Types on the network.
 == Changelog ==
 
 = 1.0.5 =
-* Added: Default mime options (enabled for safe, disabled for the rest) (effective only before first safe has been made)
+* Added: Default mime options (enabled for safe, disabled for the rest) (effective only before the first save has been made)
 * Added: Default Mime Types are directly active on first activation
 * Added: single-site compatibility
 * Added: Extra option saving sanitation
