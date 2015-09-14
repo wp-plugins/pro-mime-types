@@ -3,11 +3,10 @@
 
 add_filter( 'ext2type', 'pmt_ext2type' );
 
-function minimatica_file_types( $types ) {
-	
-	$types['video'][] = 'webm';	
+function pmt_ext2type( $types ) {
+
+	$types['video'][] = 'webm';
 	$types['image'][] = 'svg';
 
 	return $types;
 }
-

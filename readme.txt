@@ -3,7 +3,7 @@ Contributors: Cybr
 Tags: mime, mimetypes, types, multisite, single, upload, wpmu, prosites, pro, sites
 Requires at least: 3.1.0
 Tested up to: 4.3.0
-Stable tag: 1.0.5
+Stable tag: 1.0.6
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -46,6 +46,9 @@ You can also see the list of all active Mime Types on the network.
 1. That's it! Enjoy!
 
 == Changelog ==
+
+= 1.0.6 =
+* Fixed: Wrong call in ext2type filter
 
 = 1.0.5 =
 * Added: Default mime options (enabled for safe, disabled for the rest) (effective only before the first save has been made)
