@@ -2,8 +2,8 @@
 Contributors: Cybr
 Tags: mime, mimetypes, types, multisite, single, upload, wpmu, prosites, pro, sites
 Requires at least: 3.1.0
-Tested up to: 4.3.0
-Stable tag: 1.0.6
+Tested up to: 4.3.1
+Stable tag: 1.0.7
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -46,6 +46,10 @@ You can also see the list of all active Mime Types on the network.
 1. That's it! Enjoy!
 
 == Changelog ==
+
+= 1.0.7 =
+* Fixed: Fatal Error on attachment call 
+* Confirmed: WP 4.3.1 support
 
 = 1.0.6 =
 * Fixed: Wrong call in ext2type filter

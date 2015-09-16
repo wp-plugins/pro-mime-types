@@ -3,13 +3,11 @@
  * Plugin Name: Pro Mime Types
  * Plugin URI: https://wordpress.org/plugins/pro-mime-types/
  * Description: Allows you to edit mime types with or without Pro Sites (depends if enabled). Created for multisites.
- * Version: 1.0.6
+ * Version: 1.0.7
  * Author: Sybre Waaijer
  * Author URI: https://cyberwire.nl/
  * Text Domain: promimetypes
  */
-
-// force changed
 
 function pmt_locale_init() {
 	$plugin_dir = basename(dirname(__FILE__));
@@ -43,7 +41,7 @@ function pmt_site_admin() {
 
 //* Pro Sites active check
 function is_prosites_active() {
-	if ( is_plugin_active( 'pro-sites/pro-sites.php' )) {
+	if ( function_exists( 'is_plugin_active' ) && is_plugin_active( 'pro-sites/pro-sites.php' ) ) {
 		return true;
 	} else {
 		return false;
